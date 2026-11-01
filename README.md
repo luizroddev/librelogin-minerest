@@ -1,61 +1,9 @@
+# LibreLogin Minerest
 
-# LibreLogin
+Fork mínimo do [LibreLogin 0.24.0](https://github.com/kyngs/LibreLogin/tree/5cae5bd01fa37e45ee1d529bfa5c8eb1dcdc5c58), com o histórico original e a licença MPL-2.0 preservados.
 
-(formerly LibrePremium) is an open-source, multiplatform, and highly customizable authentication plugin with outstanding features and API.
+A versão `0.24.0-minerest.2` troca apenas `Title.Times.of` por `Title.Times.times` para compatibilidade com o Adventure 5 do Velocity 4.3.0. Não altera as regras de autenticação.
 
-# Quick information
+[Diff da correção](https://github.com/luizroddev/librelogin-minerest/commit/b555f7d).
 
-<img src="https://img.shields.io/badge/Java%20version-%2017+-blue?style=for-the-badge&logo=java&logoColor=white"
-alt="Plugin requires Java 17 or newer"></img>
-
-<a href="https://discord.gg/HP3CSfCv2v">
-<img src="https://img.shields.io/badge/Discord-%20SUPPORT-blue?style=for-the-badge&logo=discord&logoColor=white" 
-alt="Support available on Discord"></img>
-</a>
-<a href="https://github.com/kyngs/LibreLogin/wiki">
-<img src="https://img.shields.io/badge/Documentation-555555?style=for-the-badge&logo=wikipedia" alt="Documentation on the Wiki"></img>
-</a>
-
-<a href="https://github.com/kyngs/LibreLogin/graphs/contributors">
-<img src="https://img.shields.io/badge/Contributors-Credits-blue?style=for-the-badge" 
-alt="Contributors listed"></img>
-</a>
-
-## Basic set of features
-
-- AutoLogin for premium players
-- TOTP 2FA (Authy, Google Authenticator...) [details](https://github.com/kyngs/LibreLogin/wiki/2FA)
-- Session system
-- Name validation (including case sensitivity check)
-- Automatic data migration for premium players
-- Migration of a player's data by using one command
-- Geyser (Bedrock) support using [Floodgate](https://github.com/kyngs/LibreLogin/wiki/Floodgate)
-
-## Considerations
-
-- When using on proxy, you need to secure your limbo
-
-## Platforms
-
-- [x] Velocity
-- [x] BungeeCord
-- [x] Paper
-
-## References
-
-- check out [reviews](https://www.spigotmc.org/resources/librelogin-authorization-plugin-automatic-login-2fa.101040/reviews) on spigotmc.org  
-
-# Special thanks
-
-- [Raixo](https://github.com/RAIXOCZ) - for developing the original bungeecord port
-- [FastLogin contributors](https://github.com/games647/FastLogin) - for their work, which was used as a base for the
-  paper port
-- [Fejby](https://github.com/Fejby) - for providing Floodgate test server and helping with testing
-
-# License
-
-LibrePremium is [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software), licensed under the Mozilla Public License 2.0.
-
-[Read the license here.](https://github.com/kyngs/LibreLogin/blob/master/LICENSE)
-
-The plugin **is and always will be** completely open-source, so you don't need to worry about malicous copies.
+O uso em produção depende de aprovação do Luiz.
