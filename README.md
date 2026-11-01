@@ -7,3 +7,5 @@ A versão `0.24.0-minerest.2` troca apenas `Title.Times.of` por `Title.Times.tim
 [Diff da correção](https://github.com/luizroddev/librelogin-minerest/commit/b555f7d).
 
 O uso em produção depende de aprovação do Luiz.
+
+O build tenta também o repositório de releases do Libby (https://repo.alessiodp.com/releases/) no pluginManagement. O artefato antigo libby-gradle-plugin:plugin:1.2.1 não está disponível nele (HTTP 404).

@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+        maven { url = uri('https://repo.alessiodp.com/releases/') }
         maven {
             url = uri("https://repo.kyngs.xyz/gradle-plugins")
         }
