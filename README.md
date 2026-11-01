@@ -18,3 +18,5 @@ O script verifica SHA-256 do jar oficial e das dependências, compila somente `A
 Saída: `build/differential/LibreLogin-0.24.0-minerest.2.jar`. Não é um rebuild integral do upstream: o Gradle 8.8 não executa no JDK 25, o plugin de licença antigo falha no Gradle 9, e o plugin Libby 1.2.1 não é resolvido mesmo com o repositório adicional. O builder segue o procedimento diferencial já empregado no Minerest, sem trazer as mudanças de autenticação daquele outro fork.
 
 O código-fonte completo correspondente está neste repositório e no ZIP de fontes da release. O comportamento alterado é exclusivamente a fábrica de temporização de título compatível com Adventure 5.
+
+A versão interna informada pelo plugin permanece 0.24.0: o parser upstream não aceita sufixos. 0.24.0-minerest.2 identifica apenas tag, release e nome do jar. O builder preserva descritores e bootstrap originais; a única troca de código é Title.Times.of por Title.Times.times.

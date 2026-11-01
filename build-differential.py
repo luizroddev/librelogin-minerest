@@ -66,17 +66,7 @@ for path in classes.rglob('*.class'):
         raise RuntimeError('Unexpected compiled class: '+name)
     entries[name] = path.read_bytes()
     changed.append(name)
-for name in ('velocity-plugin.json','plugin.yml','bungee.yml'):
-    if name in entries:
-        entries[name] = entries[name].replace(b'0.24.0',lock['forkVersion'].encode())
-bootstrap = 'xyz/kyngs/librelogin/velocity/VelocityBootstrap.class'
-# Runtime @Plugin also carries the version. Replace its UTF8 constant, preserving the class structure.
-data = entries[bootstrap]
-old = b'\x01\x00\x060.24.0'
-newversion = lock['forkVersion'].encode()
-if data.count(old) != 1:
-    raise RuntimeError('Unexpected bootstrap version constant')
-entries[bootstrap] = data.replace(old,b'\x01'+len(newversion).to_bytes(2,'big')+newversion)
+# Preserve upstream descriptors and bootstrap: internal version remains 0.24.0.
 entries['LICENSE'] = (ROOT/'LICENSE').read_bytes()
 for name in list(entries):
     if name.upper().startswith('META-INF/') and name.upper().endswith(('.SF','.RSA','.DSA')):
