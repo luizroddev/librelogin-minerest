@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "upstreamCommit": "5cae5bd01fa37e45ee1d529bfa5c8eb1dcdc5c58",
+  "source": {
+    "url": "https://codeload.github.com/kyngs/LibreLogin/tar.gz/5cae5bd01fa37e45ee1d529bfa5c8eb1dcdc5c58",
+    "sha256": "7145962437c363c55701655e7fc160453f229c990ebd2ffe7e4c42f4f96a639b"
+  },
+  "upstreamBinary": {
+    "url": "https://github.com/kyngs/LibreLogin/releases/download/0.24.0/LibreLogin.jar",
+    "sha256": "3df848d4058e63f37cf9fe997542fd49c84374440d116a34ac4052278aa77e4f"
+  },
+  "forkVersion": "0.24.0-minerest.2",
+  "authority": "librelogin:0.24.0-minerest.2",
+  "buildDependencies": [
+    {
+      "name": "relocator",
+      "url": "https://repo.maven.apache.org/maven2/me/lucko/jar-relocator/1.7/jar-relocator-1.7.jar",
+      "sha256": "6f7d1184e17a90788797e3b9b2e34b87ff9e02bd623851052d78709071c3bb82"
+    },
+    {
+      "name": "asm",
+      "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.jar",
+      "sha256": "876eab6a83daecad5ca67eb9fcabb063c97b5aeb8cf1fca7a989ecde17522051"
+    },
+    {
+      "name": "asm-commons",
+      "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar",
+      "sha256": "3301a1c1cb4c59fcc5292648dac1d7c5aed4c0f067dfbe88873b8cdfe77404f4"
+    },
+    {
+      "name": "asm-tree",
+      "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar",
+      "sha256": "14b7880cb7c85eed101e2710432fc3ffb83275532a6a894dc4c4095d49ad59f1"
+    },
+    {
+      "name": "jsr305",
+      "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+      "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+    },
+    {
+      "name": "annotations",
+      "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar",
+      "sha256": "2037be378980d3ba9333e97955f3b2cde392aa124d04ca73ce2eee6657199297"
+    },
+    {
+      "name": "floodgate",
+      "url": "https://repo.opencollab.dev/main/org/geysermc/floodgate/api/2.2.0-SNAPSHOT/api-2.2.0-20221219.193551-19.jar",
+      "sha256": "8a6a93dea84716a5ccf2306867acf8a31fef129c2e9b3dd6e973059c8b61435a"
+    }
+  ],
+  "velocity": {
+    "url": "https://fill-data.papermc.io/v1/objects/35a5596a5468a035d8a32c8de5ebb0dc6b8d8f0cc3ff5169d514aca762af8aa8/velocity-4.2.0-30.jar",
+    "sha256": "35a5596a5468a035d8a32c8de5ebb0dc6b8d8f0cc3ff5169d514aca762af8aa8"
+  },
+  "compileLibraries": [
+    "acf-velocity",
+    "caffeine",
+    "configurate-core",
+    "configurate-hocon",
+    "config",
+    "totp",
+    "bstats-base",
+    "geantyref"
+  ]
+}
