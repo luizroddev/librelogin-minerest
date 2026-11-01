@@ -13,7 +13,7 @@ O build tenta também o repositório de releases do Libby (https://repo.alessiod
 ## Build diferencial
 
 Requisitos: JDK 25 (`JAVA_HOME`), Python 3 e curl. Execute `python build-differential.py`.
-O script verifica SHA-256 do jar oficial e das dependências, compila somente `AuthenticAuthorizationProvider` com javac 25 (`--release 21`), reproduz as relocations do upstream e substitui essa classe e sua classe interna. Atualiza somente os metadados da versão e preserva as demais classes, recursos e a licença. A constante da anotação `@Plugin` do bootstrap também recebe a versão do fork.
+O script verifica SHA-256 do jar oficial e das dependências, compila somente `AuthenticAuthorizationProvider` com javac 25 (`--release 21`), reproduz as relocations do upstream e substitui essa classe e sua classe interna. Preserva os descritores, o bootstrap e a versão interna 0.24.0, além das demais classes, recursos e licença.
 
 Saída: `build/differential/LibreLogin-0.24.0-minerest.2.jar`. Não é um rebuild integral do upstream: o Gradle 8.8 não executa no JDK 25, o plugin de licença antigo falha no Gradle 9, e o plugin Libby 1.2.1 não é resolvido mesmo com o repositório adicional. O builder segue o procedimento diferencial já empregado no Minerest, sem trazer as mudanças de autenticação daquele outro fork.
 
